@@ -1,0 +1,9 @@
+version: 2
+deploy:
+  steps:
+    terraformInit:
+      before:
+        - name: Set custom .terraformrc
+          run: |
+            cat .terraformrc >> ~/.terraformrc
+            cat ~/.terraformrc
