@@ -8,3 +8,6 @@ deploy:
           run: |
             echo Running commad from step.run
             echo Running another command from step.run
+            echo "### Summary" >> $ENV0_STEP_SUMMARY
+            echo "" >> $ENV0_STEP_SUMMARY
+            echo "- it's cool" >> $ENV0_STEP_SUMMARY
