@@ -6,8 +6,8 @@ deploy:
         - echo Running string command
         - name: Command from step.run
           run: |
-            echo Running commad from step.run
+            echo Running command from step.run
             echo Running another command from step.run
-            echo "### Summary" >> $ENV0_STEP_SUMMARY
-            echo "" >> $ENV0_STEP_SUMMARY
-            echo "- it's cool" >> $ENV0_STEP_SUMMARY
+            printf "Check failed" >> $ENV0_STEP_SUMMARY 
+            printf "### Summary\n\n" >> $ENV0_STEP_CONTENT
+            printf "- it's cool" >> $ENV0_STEP_CONTENT
