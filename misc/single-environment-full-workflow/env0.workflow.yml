@@ -1,0 +1,9 @@
+environments:
+  service1:
+    name: 'Service 1'
+    vcs:
+      type: 'terraform'
+      terraformVersion: '1.5.7'
+      repository: 'https://github.com/env0/templates'
+      path: 'misc/null-resource_'
+      revision: 'master'
