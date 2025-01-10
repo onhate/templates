@@ -18,3 +18,5 @@ no_open_cidr_blocks[msg] {
 allow {
   count(violations) == 0
 }
+
+invalid syntax
