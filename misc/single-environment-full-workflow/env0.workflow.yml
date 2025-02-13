@@ -3,7 +3,7 @@ environments:
     name: 'Service 1'
     vcs:
       type: 'terraform'
-      terraformVersion: '1.10.5'
+      terraformVersion: '1.5.7'
       repository: 'https://github.com/onhate/templates'
       path: 'misc/null-resource'
       revision: 'master'
