@@ -7,4 +7,3 @@ environments:
       repository: 'https://github.com/onhate/templates'
       path: 'misc/null-resource'
       revision: 'master'
-      xxx: 1
