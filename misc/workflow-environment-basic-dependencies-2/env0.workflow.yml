@@ -23,4 +23,4 @@ environments:
     needs:
       - middleService1
 settings:
-  environmentRemovalStrategy: destroy
+  environmentRemovalStrategy: detach
