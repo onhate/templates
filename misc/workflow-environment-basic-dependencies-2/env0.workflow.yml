@@ -22,3 +22,5 @@ environments:
     templateName: 'null'
     needs:
       - middleService1
+settings:
+  environmentRemovalStrategy: destroy
