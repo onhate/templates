@@ -75,9 +75,14 @@ resource "env0_environment" "workflow_environment" {
     value = "root_env1_var2_value_2"
   }
 
+
+  configuration {
+    name  = "root_env1_var3"
+    value = "root_env1_var3_value"
+  }
+
   sub_environment_configuration {
     alias                      = "rootService1"
-    revision                   = "master"
     approve_plan_automatically = true
     configuration {
       name  = "sub_env1_var1"
@@ -87,11 +92,14 @@ resource "env0_environment" "workflow_environment" {
       name  = "sub_env1_var2"
       value = "sub_env1_var2_value"
     }
+    configuration {
+      name  = "sub_env1_var3"
+      value = "sub_env1_var3_value"
+    }
   }
 
   sub_environment_configuration {
     alias                      = "rootService2"
-    revision                   = "master"
     approve_plan_automatically = true
     configuration {
       name  = "sub_env2_var1"
